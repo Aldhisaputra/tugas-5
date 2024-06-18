@@ -5,9 +5,10 @@ class Barang extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        // Load model, session library, and URL helper
+        // Load model, session library, URL helper, dan form validation library
         $this->load->model('Barang_model');
         $this->load->library('session'); // Memuat library session
+        $this->load->library('form_validation'); // Memuat library form validation
         $this->load->helper('url');
     }
 
@@ -170,4 +171,4 @@ class Barang extends CI_Controller {
         redirect('barang/data_barang');
     }
 }
-?>
+

@@ -54,4 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['barang/data_barang'] = 'barang/index';
 $route['tentang'] = 'tentang';
+$route['barang/create_barang'] = 'barang/create_barang';
+
 
