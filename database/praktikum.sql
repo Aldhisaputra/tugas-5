@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2024 at 03:37 PM
+-- Generation Time: Jun 21, 2024 at 02:42 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -53,8 +53,27 @@ INSERT INTO `barang` (`id`, `kode_barang`, `nama_barang`, `kategori_barang`, `de
 (6, 'BRG006', 'Laptop Acer Predator', 'Elektronik', 'Laptop gaming dengan performa terbaik', 17000000, 22000000, 20, 'PT. Acer Indonesia', '2023-06-30'),
 (7, 'BRG007', 'Laptop MSI Stealth', 'Elektronik', 'Laptop gaming dengan desain tipis dan performa tinggi', 18000000, 23000000, 18, 'PT. MSI Indonesia', '2023-07-15'),
 (8, 'BRG008', 'Laptop Microsoft Surface', 'Elektronik', 'Laptop dengan fitur 2-in-1 dan performa tinggi', 20000000, 25000000, 12, 'PT. Microsoft Indonesia', '2023-08-10'),
-(9, 'BRG009', 'Laptop Samsung Galaxy Book', 'Elektronik', 'Laptop dengan layar AMOLED dan performa tinggi', 15000000, 20000000, 22, 'PT. Samsung Indonesia', '2023-09-05'),
-(10, 'BRG010', 'Laptop Huawei MateBook', 'Elektronik', 'Laptop dengan desain elegan dan performa tinggi', 16000000, 21000000, 25, 'PT. Huawei Indonesia', '2023-10-20');
+(9, 'BRG009', 'Laptop Samsung Galaxy Books', 'Elektronik', 'Laptop dengan layar AMOLED dan performa tinggi', 15000000, 20000000, 22, 'PT. Samsung Indonesia', '2023-09-05');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `barang`
+--
+ALTER TABLE `barang`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `barang`
+--
+ALTER TABLE `barang`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
